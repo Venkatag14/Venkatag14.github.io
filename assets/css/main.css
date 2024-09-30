@@ -2482,6 +2482,56 @@ input, select, textarea {
 		opacity: 1.0;
 	}
 
+	#skills {
+		background-color: #201440; /* Beige background color */
+		padding: 40px;
+		margin-bottom: 0px; /* Adds gap below the section */
+		border-radius: 2% /* Optional: for rounded corners */
+	}
+	
+	.skills-section {
+		margin: 20px 0;
+	}
+	
+	.skills-section h3 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	
+	.skills-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px; /* Adjusts vertical spacing between rows */
+	}
+	
+	.skill-row {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px; /* Adjusts horizontal spacing between skills */
+	}
+	
+	.skill {
+		width: 48%; /* Adjusts width of each skill in a row */
+	}
+	
+	.skill-bar {
+		background-color: #f0f0f0;
+		border-radius: 10px;
+		height: 20px;
+		position: relative;
+		margin-top: 5px;
+	}
+	
+	.filled-bar {
+		background-color: #4caf50;
+		height: 100%;
+		border-radius: 10px;
+	}
+	
+	.skill span {
+		font-size: 16px;
+	}
+
 /* Icon */
 
 	.icon {
@@ -2623,7 +2673,7 @@ input, select, textarea {
 				height: auto;
 				margin-right: 65px; /* Space between image and text */
 			}
-			
+
 			.image-container {
 				position: relative;
 				width: fit-content;
