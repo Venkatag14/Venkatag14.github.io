@@ -2610,7 +2610,27 @@ input, select, textarea {
 		}
 
 			.image.main img {
-				width: 100%;
+				width: 200%;
+			}
+
+			.image-section {
+				display: flex;
+				align-items: center; /* Vertically aligns image and text */
+			}
+			
+			.image-left {
+				width: 100px; /* Adjust image size */
+				height: auto;
+				margin-right: 65px; /* Space between image and text */
+			}
+			
+			.image-container {
+				position: relative;
+				width: fit-content;
+			}
+			
+			.text-section {
+				flex-grow: 1; /* Ensures the text takes up the remaining space */
 			}
 
 /* List */
