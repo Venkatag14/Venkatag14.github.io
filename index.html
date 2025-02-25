@@ -59,7 +59,7 @@
 									</p>
 									<br />
 									<ul class="actions">
-										<li><a href="https://drive.google.com/file/d/1SEcTs5kymY-HAHfBqXNOExGOUH21za8c/view?usp=sharing" class="button scrolly">RESUME</a></li>
+										<li><a href="https://drive.google.com/file/d/1UZBkJ4PvkHD7KZXL95pNWKvw4UZTJQYz/view?usp=sharing" class="button scrolly">RESUME</a></li>
 									</ul>
 								</div>
 								<!-- Right Side: Image -->
@@ -88,9 +88,9 @@
 								<div style="flex: 1;">
 									<h1>About Me</h1>
 									<p> 
-										Robotics Engineering graduate student at WPI, Researcher at <a href="https://wp.wpi.edu/medicalfusionlab/">Medical Fusion Lab</a>. Specalizing in Localization, Mapping, Computer Vision and advanced robot control systems, driving future of intelligent automation.
+										Robotics Engineering graduate student at WPI, Researcher at <a href="https://wp.wpi.edu/medicalfusionlab/">Medical Fusion Lab</a>, developing robotic system using franka robot for automated multiview OCT Imaging of transplant kidney with autofocus. Specalizing in Deep Learning, Localization, Mapping, Computer Vision and advanced robot control systems, driving future of intelligent automation in Medical Imaging.
 										<br />
-										<br /> With 2 years as a Software Engineer at Wipro, I dedicated to optimizing Azure cloud apps, enhancing performance through advanced in-memory caching and proactive system monitoring.
+										<br /> With 2 years as a Software Engineer at Wipro, I contributed to developing a 3D CNN neural network for prostrate cancer detection from MRI scans, improving training data variablity through data augmentation.
 									</p>
 									<br />
 									<!-- <ul class="actions">
@@ -108,29 +108,29 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Research Assistant - Fusion Lab</h2>
-							<p>Researching on non invasive scanning of kidney pre transplantation, under Prof. Haichong Zhang.</p>
+							<p>developing multiview OCT imaging of kidney pre transplantation with autofocus, under <a href="https://www.wpi.edu/people/faculty/hzhang10">Prof. Haichong Zhang</a></p>
 							<div class="features">
 								<section>
 									<div class="image-section">
-										<img src="images/robot.jpeg" alt="Medical Imaging" class="image-left" />
+										<img src="images/scankidney.png" alt="Medical Imaging" class="image-left" />
 										<div class="text-section">
 											<h3>Medical Imaging</h3>
-											<p>Using Optical Coherence Tomography to achieve a 2mm penetration depth for imaging deep into kidney tissue.</p>
+											<p>Using Optical Coherence Tomography with franka robot to scan kidney transplant.</p>
 										</div>
 									</div>
 								</section>
 								<section>
 									<div class="image-section">
-										<img src="images/segment.png" alt="Medical Imaging" class="image-left" />
+										<img src="images/unet.png" alt="Medical Imaging" class="image-left" />
 										<div class="text-section">
 											<h3>Image Segmentation</h3>
-											<p>Trained an U-net model to segment organ from intel D435 camera output.</p>
+											<p>Trained a U-Net model to detect kidney capsule and fat from OCT probe RGB feed for adaptive scan acquisition.</p>
 										</div>
 									</div>
 								</section>
 								<section>
 									<div class="image-section">
-										<img src="images/trajectory.png" alt="Medical Imaging" class="image-left" />
+										<img src="images/robot.jpeg" alt="Medical Imaging" class="image-left" />
 										<div class="text-section">
 											<h3>Path Planning</h3>
 											<p>Planned Trajectory around organ for efficient scanning</p>
@@ -139,17 +139,17 @@
 								</section>
 								<section>
 									<div class="image-section">
-										<img src="images/ICP.png" alt="Medical Imaging" class="image-left" />
+										<img src="images/OCT_bscan.png" alt="Medical Imaging" class="image-left" />
 										<div class="text-section">
 											<h3>OCT post-Processing</h3>
-											<p>Converted OCT B-scans into pointcloud and performed registration using ICP</p>
+											<p>Converted OCT B-scans into Depthmaps and Volumes</p>
 										</div>
 									</div>
 								</section>
 							</div>
-							<ul class="actions">
+							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 
@@ -159,29 +159,45 @@
 							<p>Developed Services to optimize cloud apps in azure.</p>
 							<div class="features">
 								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>In-Mem</h3>
-									<p>Developed and Maintained In-Mem, a service for cloud-apps to improve performance by briefly storing frequently accessed data in memory.</p>
+									<div class="image-section">
+										<img src="images/3dcnn.png" alt="Medical Imaging" class="image-left" />
+										<div class="text-section">
+											<h3>3d Convolutional neural network</h3>
+											<p>Contributed to the development of 3D CNN deep learning model for prostate cancer detection from MRI scans</p>
+										</div>
+									</div>
 								</section>
 								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Increasing Data transfer Speeds</h3>
-									<p>Created a Priority based cache eviction feature, increasing speed of data transfer by 30% by freeing up memory removing low-priority items.</p>
+									<div class="image-section">
+										<img src="images/augmentation.png" alt="Medical Imaging" class="image-left" />
+										<div class="text-section">
+											<h3>Data augmentation</h3>
+											<p>Assisted in implementing a data augmentation pipeline, increasing training data variability</p>
+										</div>
+									</div>
 								</section>
 								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Unit tests - no stone unturned</h3>
-									<p>Programmed 117 unit tests for In-Mem and achieving 93% code coverage, Resolved 19 Sev-1 incidents limiting downtime under 30 minutes.</p>
+									<div class="image-section">
+										<img src="images/pruning.png" alt="Medical Imaging" class="image-left" />
+										<div class="text-section">
+											<h3>Model Pruning</h3>
+											<p>Supported optimization of inference speed through model Pruning</p>
+										</div>
+									</div>
 								</section>
 								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Constant Monitoring</h3>
-									<p>Improved In-mem’s reliability by Preemptively monitoring and debugging performance issues, minimizing service disruptions</p>
+									<div class="image-section">
+										<img src="images/optimization.png" alt="Medical Imaging" class="image-left" />
+										<div class="text-section">
+											<h3>Model Evaluation</h3>
+											<p>Conducted extensive model evaluation on a clinical dataset, enabling seamless integration in diagnostic workflow</p>
+										</div>
+									</div>
 								</section>
 							</div>
-							<ul class="actions">
+							<!-- <ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 
